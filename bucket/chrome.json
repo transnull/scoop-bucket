@@ -1,0 +1,47 @@
+{
+    "version": "129.0.6668.71",
+    "description": "Chrome with Penetration testing Add-ons.(Scoop bucket by arch3rpro)",
+    "homepage": "www.google.com/chrome",
+    "license": "BSD-3-Clause",
+    "notes": [
+        "增强功能",
+        "https://www.ghxi.com/chrome.html",
+        "",
+        "特点描述",
+        "双击关闭标签页",
+        "保留最后标签页（点X不行）（防止关闭最后一个标签页时关闭浏览器）",
+        "鼠标悬停标签栏滚动",
+        "按住右键时滚轮滚动标签栏",
+        "移除开发者模式警告",
+        "便携设计，程序放在App目录，数据放在Data目录（不兼容原版数据，可以重装系统换电脑不丢数据）",
+        "移除更新错误警告（因为是绿色版没有自动更新功能）",
+        "最新版下载地址: <https://www.ghxi.com/chrome.html>"
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://pan.transnull.cn/d/buckets/chrome_v129.0.6668.71.zip",
+            "hash": "91CCFA64D5F20CA8917177DF47BB91CBBD4959AEACCB16BA1D9794136DBA960A"
+        }
+    },
+    "extract_dir": "Chrome",
+    "persist": "Data",
+    "bin": "App/chrome.exe",
+    "shortcuts": [
+        [
+            "chrome.exe",
+            "chrome"
+        ]
+    ],
+    "checkver": {
+        "url": "https://pan.transnull.cn/d/buckets",
+        "regex": "(?s)(?<filename>chrome_v(?<version>[\\d.]+)\\.(?:zip|7z))",
+        "reverse": true
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://pan.transnull.cn/d/buckets/chrome_v$version.zip"
+            }
+        }
+    }
+}
