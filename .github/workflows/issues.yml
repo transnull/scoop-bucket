@@ -7,9 +7,9 @@ jobs:
     name: IssueHandler
     runs-on: windows-latest
     steps:
-      - uses: transnull/checkout@main
+      - uses: actions/checkout@main
       - name: IssueHandler
-        uses: ScoopInstaller/Githubtransnull@main
+        uses: ScoopInstaller/GithubActions@main
         if: github.event.action == 'opened' || (github.event.action == 'labeled' && contains(github.event.issue.labels.*.name, 'verify'))
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
