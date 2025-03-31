@@ -1,43 +1,43 @@
 {
-  "version": "2.7.9",
-  "description": "Community fork of KeePass",
-  "homepage": "https://keepassxc.org",
-  "license": "GPL-2.0-only",
-  "suggest": {
-    "vcredist": "extras/vcredist2022"
-  },
-  "architecture": {
-    "64bit": {
-      "url": "https://mirror.ghproxy.com/https://github.com/keepassxreboot/keepassxc/releases/download/2.7.9/KeePassXC-2.7.9-Win64.zip",
-      "hash": "febce8934a02f2b0eb13f2a3eb586321f374a87c5e7c85d5a06729a868799781",
-      "extract_dir": "KeePassXC-2.7.9-Win64"
-    }
-  },
-  "post_install": "if (Test-Path \"$persist_dir\\keepassxc.ini\") { Move-Item \"$persist_dir\\keepassxc.ini\" \"$dir\\config\" -Force }",
-  "bin": [
-    "KeePassXC.exe",
-    "keepassxc-cli.exe",
-    "keepassxc-proxy.exe"
-  ],
-  "shortcuts": [
-    [
-      "KeePassXC.exe",
-      "KeePassXC"
-    ]
-  ],
-  "persist": "config",
-  "checkver": {
-    "github": "https://github.com/keepassxreboot/keepassxc"
-  },
-  "autoupdate": {
-    "architecture": {
-      "64bit": {
-        "url": "https://mirror.ghproxy.com/https://github.com/keepassxreboot/keepassxc/releases/download/$version/KeePassXC-$version-Win64.zip",
-        "extract_dir": "KeePassXC-$version-Win64"
-      }
+    "version": "2.7.10",
+    "description": "Community fork of KeePass",
+    "homepage": "https://keepassxc.org",
+    "license": "GPL-2.0-only",
+    "suggest": {
+        "vcredist": "extras/vcredist2022"
     },
-    "hash": {
-      "url": "$url.DIGEST"
+    "architecture": {
+        "64bit": {
+            "url": "https://mirror.ghproxy.com/https://github.com/keepassxreboot/keepassxc/releases/download/2.7.10/KeePassXC-2.7.10-Win64.zip",
+            "hash": "1bf09a1fff643c5741af21f8160b2e70caad62d0584ed2b271b49bd3c2efd57f",
+            "extract_dir": "KeePassXC-2.7.10-Win64"
+        }
+    },
+    "post_install": "if (Test-Path \"$persist_dir\\keepassxc.ini\") { Move-Item \"$persist_dir\\keepassxc.ini\" \"$dir\\config\" -Force }",
+    "bin": [
+        "KeePassXC.exe",
+        "keepassxc-cli.exe",
+        "keepassxc-proxy.exe"
+    ],
+    "shortcuts": [
+        [
+            "KeePassXC.exe",
+            "KeePassXC"
+        ]
+    ],
+    "persist": "config",
+    "checkver": {
+        "github": "https://github.com/keepassxreboot/keepassxc"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://mirror.ghproxy.com/https://github.com/keepassxreboot/keepassxc/releases/download/$version/KeePassXC-$version-Win64.zip",
+                "extract_dir": "KeePassXC-$version-Win64"
+            }
+        },
+        "hash": {
+            "url": "$url.DIGEST"
+        }
     }
-  }
 }
