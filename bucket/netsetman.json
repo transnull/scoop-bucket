@@ -3,7 +3,6 @@
     "description": "NetSetMan是一款免费网络设置工具，可快速更改IP地址、子网掩码、网关等参数，支持保存多个网络配置，并允许运行脚本。最近更新修复了多个问题，包括打开主机对话框时的错误和文件签名问题。",
     "homepage": "https://www.netsetman.com/en/freeware",
     "license": "Non-Commercial Freeware",
-    "changelog": "https://www.netsetman.com/en/version-505",
     "url": "https://pan.transnull.cn/d/buckets/NetSetMan_v5.3.2.zip",
     "hash": "8b3ff2abfae79c4ebf64529ead8d57eadd5545ca83cfbd18fa5c47ebe29b1e55",
     "innosetup": true,
