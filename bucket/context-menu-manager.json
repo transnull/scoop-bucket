@@ -5,7 +5,7 @@
     "url": "https://pan.transnull.cn/d/buckets/ContextMenuManager_v3.3.3.1.zip",
     "hash": "3faecb2ae6c9d025df54bdc72d4b0f850a4931dd41235f7f46b291824d3b5dbe",
     "checkver": {
-        "url": "https://pan.transnull.cn/d/buckets/",
+        "url": "https://pan.transnull.cn/buckets/",
         "regex": "ContextMenuManager([\\d.]+)"
     },
     "autoupdate": {

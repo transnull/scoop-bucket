@@ -20,7 +20,7 @@
         ]
     ],
     "checkver": {
-        "url": "https://pan.transnull.cn/d/buckets/",
+        "url": "https://pan.transnull.cn/buckets",
         "regex": "BeyondCompare ([\\d.]+)"
     },
     "autoupdate": {

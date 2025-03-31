@@ -35,7 +35,7 @@
         "keep": true
     },
     "checkver": {
-        "url": "https://pan.transnull.cn/d/buckets",
+        "url": "https://pan.transnull.cn/buckets/",
         "regex": "(?s)(?<filename>/SecureCRT_v(?<version>[\\d.]+)\\.(?:zip|7z))",
         "reverse": true
     },

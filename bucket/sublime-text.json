@@ -32,8 +32,11 @@
       ]
     ],
     "checkver": {
-        "url": "https://pan.transnull.cn/d/buckets/",
+        "url": "https://pan.transnull.cn/buckets/",
         "regex": "(?<filename>SublimeText_v(?<version>[\\d.]+)\\.(?:zip|7z))",
         "reverse": true
+    },
+    "autoupdate": {
+        "url": "https://pan.transnull.cn/d/buckets/SublimeText_v$version.zip"
     }
 }
