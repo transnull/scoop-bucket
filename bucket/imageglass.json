@@ -1,0 +1,56 @@
+{
+    "version": "9.2.0.1208",
+    "description": "A lightweight, versatile image viewer",
+    "homepage": "https://imageglass.org",
+    "license": {
+        "identifier": "ImageGlass Software End-User License Agreement",
+        "url": "https://github.com/d2phap/ImageGlass/blob/develop/LICENSE"
+    },
+    "notes": [
+        "If this app does not work maybe you need to clean '$dir\\igconfig.json' file or clear default themes in '$dir\\Themes' directory.",
+        "To access EXIF data, you need to install 'ExifGlass' packages."
+    ],
+    "suggest": {
+        ".NET Desktop Runtime": "windowsdesktop-runtime",
+        "ExifGlass": "exifglass"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/d2phap/ImageGlass/releases/download/9.2.0.1208/ImageGlass_9.2.0.1208_x64.zip",
+            "hash": "9df964a77b89ecf025239737a8c41646a6d8e2666edf35b17d2151713c6e02a1",
+            "extract_dir": "ImageGlass_9.2.0.1208_x64"
+        }
+    },
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\\igconfig.json\")) {",
+        "    Add-Content \"$dir\\igconfig.json\" '{\"AutoUpdate\": \"0\"}' -Encoding utf8",
+        "}"
+    ],
+    "bin": [
+        "ImageGlass.exe",
+        "igcmd.exe"
+    ],
+    "shortcuts": [
+        [
+            "ImageGlass.exe",
+            "ImageGlass"
+        ]
+    ],
+    "persist": [
+        "igconfig.json",
+        "WebUIData",
+        "ThumbnailCache",
+        "Themes"
+    ],
+    "checkver": {
+        "github": "https://github.com/d2phap/ImageGlass"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/d2phap/ImageGlass/releases/download/$version/ImageGlass_$version_x64.zip",
+                "extract_dir": "ImageGlass_$version_x64"
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+{
+    "version": "3.7.4.5725",
+    "description": "Uninstall Tool是CrystalIdea Software出品的一款强大而灵活的Windows标准”添加/删除程序”工具的替代软件。它能快速、安全而方便的删除不必要的应用程序并提高您的电脑的效能。Uninstall Tools支持微软Windows 2000,XP,2003,Vista操作系统(含64位操作系统)。",
+    "homepage": "https://www.bandicam.com",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "https://www.ghxi.com/uninstalltool.html"
+    },
+    "notes": [
+        "新版变化",
+        "https://www.ghxi.com/uninstalltool.html",
+        "",
+        "特点描述",
+        "- 采用第三方便携式处理!"
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://pan.transnull.cn/d/buckets/UninstallTool_v3.7.4.5725.zip",
+            "hash": "8765F78C47ED5A1ED2FDF6641A8CBDF13DF74EA01156D37E704A4C3AE3AEBC05"
+        }
+    },
+    "bin": "UninstallToolPortable.exe",
+    "shortcuts": [
+        [
+            "UninstallToolPortable.exe",
+            "UninstallTool"
+        ]
+    ],
+    "checkver": {
+        "url": "https://pan.transnull.cn/d/buckets",
+        "regex": "(?s)(?<filename>UninstallTool_v(?<version>[\\d.]+)\\.(?:zip|7z))",
+        "reverse": true
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://pan.transnull.cn/d/buckets/UninstallTool_v$version.zip"
+            }
+        }
+    }
+}

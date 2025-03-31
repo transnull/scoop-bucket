@@ -1,0 +1,41 @@
+{
+    "version": "6.0.1",
+    "description": "剪映专业版是抖音推出的一款免费的全能易用的视频剪辑软件。",
+    "homepage": "https://www.jianying.com",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "https://www.jianying.com/company/tos"
+    },
+    "notes": [
+        "新版变化",
+        "https://www.jianying.cn/downloads/version_history",
+        "",
+        "特点描述",
+        "免安装版本"
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://pan.transnull.cn/d/buckets/Jianying_v6.0.1.zip",
+            "hash": "4adf307e5445c0bcff59bd6b70dc2683eb81e12e4a346e9166af50b975dddb00"
+        }
+    },
+    "bin": "jianyingPro.exe",
+    "shortcuts": [
+        [
+            "jianyingPro.exe",
+            "剪映"
+        ]
+    ],
+    "checkver": {
+        "url": "https://pan.transnull.cn/d/buckets",
+        "regex": "(?s)(?<filename>jianying_v(?<version>[\\d.]+)\\.(?:zip|7z))",
+        "reverse": true
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://pan.transnull.cn/d/buckets/jianying_v$version.zip"
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "version": "5.0.4",
+    "description": "文件比较工具",
+    "homepage": "https://tmioe.com/95.html",
+    "license": "GPL-3.0-or-later",
+    "url": "https://pan.transnull.cn/d/buckets/BeyondCompare_v5.0.4.zip",
+    "hash": "42DA287D041B55F77286BA95407CC4C76E38DA969CF2C4112B5D0382A189C62C",
+    "bin": [
+        "BCompare.exe",
+        "BCClipboard.exe"
+    ],
+    "shortcuts": [
+        [
+            "BCompare.exe",
+            "Beyond Compare 4"
+        ],
+        [
+            "BCClipboard.exe",
+            "Clipboard Compare"
+        ]
+    ],
+    "checkver": {
+        "url": "https://pan.transnull.cn/d/buckets/",
+        "regex": "BeyondCompare ([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://pan.transnull.cn/d/buckets/BeyondCompare_v$version.zip"
+    }
+}

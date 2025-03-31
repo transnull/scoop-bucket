@@ -1,0 +1,45 @@
+{
+    "version": "1.9.5",
+    "description": "Typora中文版是一款Markdown编辑器及阅读器的文本编辑器.Typora破解版风格极简/多种主题/支持macOS,Windows及 Linux,实时预览/图片与文字/代码块/数学公式/图表 目录大纲/文件管理/导入与导出等..",
+    "homepage": "- 删除多国语言，提供快速关联文件类型及清理批处理",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "https://www.423down.com/15527.html"
+    },
+    "notes": [
+        "新版变化",
+        "",
+        "特点描述",
+        "typora编辑器,typora绿色破解版,typora中文绿色版",
+        "- 免激活中文绿色版，劫持破解激活版，免安装绿化版",
+        "- 删除多国语言，提供快速关联文件类型及清理批处理",
+        "",
+        "最新版下载地址: <https://www.423down.com/15527.html>"
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://pan.transnull.cn/d/buckets/Typora_v1.9.5.zip",
+            "hash": "9CA0B2F3BCC57B420AC36859478B61DF6FCC6392DC17EDDDCA86836FC972B7C3"
+        }
+    },
+    "persist": "resoutces",
+    "bin": "Typora.exe",
+    "shortcuts": [
+        [
+            "Typora.exe",
+            "Typora"
+        ]
+    ],
+    "checkver": {
+        "url": "https://pan.transnull.cn/d/buckets",
+        "regex": "(?s)(?<filename>Typora_v(?<version>[\\d.]+)\\.(?:zip|7z))",
+        "reverse": true
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://pan.transnull.cn/d/buckets/Typora_v$version.zip"
+            }
+        }
+    }
+}
