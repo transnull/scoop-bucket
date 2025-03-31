@@ -27,8 +27,8 @@
         ]
     ],
     "checkver": {
-        "url": "https://pan.transnull.cn/d/buckets",
-        "regex": "(?s)(?<filename>jianying_v(?<version>[\\d.]+)\\.(?:zip|7z))",
+        "url": "https://pan.transnull.cn/api/fs/list?path=/buckets",
+        "regex": "jianying_v(?<version>[\\w.-]+)\\.(?:zip|7z|exe)",
         "reverse": true
     },
     "autoupdate": {
