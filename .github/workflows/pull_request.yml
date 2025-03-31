@@ -7,8 +7,8 @@ jobs:
     name: PullRequestHandler
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@main
+      - uses: transnull/checkout@main
       - name: PullRequestHandler
-        uses: ScoopInstaller/GithubActions@main
+        uses: ScoopInstaller/Githubtransnull@main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
