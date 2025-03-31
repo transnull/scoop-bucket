@@ -26,13 +26,13 @@
     ],
     "checkver": {
         "url": "https://pan.transnull.cn/api/fs/list?path=/buckets",
-        "regex": "Photoshop_v(?<version>[\\w.-]+)\\.(?:zip|7z|exe)",
+        "regex": "Photoshop_CS6_v(?<version>[\\w.-]+)\\.(?:zip|7z|exe)",
         "reverse": false
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://pan.transnull.cn/d/buckets/Photoshop_v$version.zip"
+                "url": "https://pan.transnull.cn/d/buckets/Photoshop_CS6_v$version.zip"
             }
         }
     }

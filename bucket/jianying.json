@@ -28,13 +28,13 @@
     ],
     "checkver": {
         "url": "https://pan.transnull.cn/api/fs/list?path=/buckets",
-        "regex": "jianying_v(?<version>[\\w.-]+)\\.(?:zip|7z|exe)",
+        "regex": "Jianying_v(?<version>[\\w.-]+)\\.(?:zip|7z|exe)",
         "reverse": true
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://pan.transnull.cn/d/buckets/jianying_v$version.zip"
+                "url": "https://pan.transnull.cn/d/buckets/Jianying_v$version.zip"
             }
         }
     }
