@@ -31,9 +31,9 @@
         ]
     ],
     "checkver": {
-        "url": "https://pan.transnull.cn/buckets",
-        "regex": "(?s)(?<filename>Typora_v(?<version>[\\d.]+)\\.(?:zip|7z))",
-        "reverse": true
+        "url": "https://pan.transnull.cn/api/fs/list?path=/buckets",
+        "regex": "Typora_v(?<version>[\\w.-]+)\\.(?:zip|7z|exe)",
+        "reverse": false
     },
     "autoupdate": {
         "architecture": {

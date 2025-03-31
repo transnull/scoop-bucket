@@ -35,9 +35,9 @@
         ]
     ],
     "checkver": {
-        "url": "https://pan.transnull.cn/buckets",
-        "regex": "(?s)(?<filename>Bandicam_v(?<version>[\\d.]+)\\.(?:zip|7z))",
-        "reverse": true
+        "url": "https://pan.transnull.cn/api/fs/list?path=/buckets",
+        "regex": "Bandicam_v(?<version>[\\w.-]+)\\.(?:zip|7z|exe)",
+        "reverse": false
     },
     "autoupdate": {
         "architecture": {
