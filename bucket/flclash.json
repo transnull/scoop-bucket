@@ -5,7 +5,7 @@
     "license": "GPL-3.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/chen08209/FlClash/releases/download/v0.8.80/FlClash-0.8.80-windows-amd64.zip",
+            "url": "https://ghproxy.cc/https://github.com/chen08209/FlClash/releases/download/v0.8.80/FlClash-0.8.80-windows-amd64.zip",
             "hash": "f395bba7a1db842628de05ea503df421bf030828e535e7b5e9e549d095248ff5"
         }
     },
@@ -16,12 +16,12 @@
         ]
     ],
     "checkver": {
-        "github": "https://github.com/chen08209/FlClash"
+        "github": "https://ghproxy.cc/https://github.com/chen08209/FlClash"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/chen08209/FlClash/releases/download/v$version/FlClash-$version-windows-amd64.zip"
+                "url": "https://ghproxy.cc/https://github.com/chen08209/FlClash/releases/download/v$version/FlClash-$version-windows-amd64.zip"
             }
         }
     }
