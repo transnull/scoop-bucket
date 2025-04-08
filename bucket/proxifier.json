@@ -1,0 +1,28 @@
+{
+    "version": "4.12",
+    "description": "Proxifier 便携版 v4",
+    "homepage": "https://www.52pojie.cn/thread-1992822-1-1.html",
+    "license": "Proprietary",
+    "url": "https://pan.transnull.cn/d/buckets/ProxifierCN_v4.12.zip",
+    "hash": "9186fc7ae347e060df5f05c8b114ef99a2a5bca10174ef7ef2681c1fc317f62a",
+    "extract_dir": "Proxifier",
+    "persist": [
+        "Profiles",
+        "Profiles/Settings.ini"
+    ],
+    "bin": "Proxifier.exe",
+    "shortcuts": [
+        [
+            "Proxifier.exe",
+            "Proxifier"
+        ]
+    ],
+    "checkver": {
+        "url": "https://pan.transnull.cn/api/fs/list?path=/buckets",
+        "regex": "ProxifierCN_v(?<version>[\\w.-]+)\\.(?:zip|7z|exe)",
+        "reverse": false
+    },
+    "autoupdate": {
+        "url": "https://pan.transnull.cn/d/buckets/ProxifierCN_v$version.zip"
+    }
+}
