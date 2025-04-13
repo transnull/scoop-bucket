@@ -1,0 +1,41 @@
+{
+    "version": "6.34.11482",
+    "description": "CCleaner是一款免费的系统优化和隐私保护工具.它的体积小、扫描速度非常快，支持自定义清理规则，增强了应用程序清理范围和效果。",
+    "homepage": "https://www.423down.com/716.html",
+    "license": "Freeware",
+    "notes": [
+        "新版变化",
+        "https://www.bandicam.cn/downloads/version_history",
+        "",
+        "特点描述",
+        "by CheshireCat, Elchupacabra",
+        "- 采用劫持破解注册 VIP 授权版，第三方便携式处理!"
+    ],
+    "url": "https://pan.transnull.cn/d/buckets/CCleaner_v6.34.11482.zip",
+    "hash": "1eeac27a26161003fbac95d9678544f0df6a66e1bfe52b7ffb8e2719ab1d1845",
+    "extract_dir": "CCleaner",
+    "architecture": {
+        "64bit": {
+            "bin": [
+                [
+                    "CCleaner.exe",
+                    "CCleaner"
+                ]
+            ],
+            "shortcuts": [
+                [
+                    "CCleaner.exe",
+                    "CCleaner"
+                ]
+            ]
+        }
+    },
+    "checkver": {
+        "url": "https://pan.transnull.cn/api/fs/list?path=/buckets",
+        "regex": "CCleaner_v(?<version>[\\w.-]+)\\.(?:zip|7z|exe)",
+        "reverse": false
+    },
+    "autoupdate": {
+        "url": "https://pan.transnull.cn/d/buckets/CCleaner_v$version.zip"
+    }
+}
