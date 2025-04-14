@@ -1,5 +1,5 @@
 {
-    "version": "3.4.23",
+    "version": "3.2.0",
     "description": "Microsoft Office 365. Family of client software, server software and services developed by Microsoft.",
     "homepage": "https://www.office.com/",
     "license": {
@@ -9,7 +9,7 @@
     "changelog": "https://learn.microsoft.com/en-us/officeupdates/current-channel",
     "depends": "7zip19.00-helper",
     "url": "https://download.microsoft.com/download/#/dl.7z_",
-    "hash": "5c5042eec62295b781f58954e469514697405e1b4937962c9fdde9d6e9c70cc3",
+    "hash": "8edea6a9a0480053e1b54f0e061f20e50f385ba226c81131feeb063200dbb199",
     "pre_install": [
         "$scriptdir = \"$bucketsdir\\Scoop-Apps\\scripts\"",
         "if ($architecture -eq '64bit') {",
