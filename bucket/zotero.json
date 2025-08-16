@@ -1,5 +1,5 @@
 {
-    "version": "7.0.23",
+    "version": "7.0.24",
     "description": "Open-source reference management software to manage bibliographic data and related research materials.",
     "homepage": "https://www.zotero.org/",
     "license": "AGPL-3.0-only",
@@ -14,18 +14,18 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://download.zotero.org/client/release/7.0.23/Zotero-7.0.23_win-x64.zip",
-            "hash": "885085329b471db7bec880a16008ab79d928844873cc6ffcf4fa1a70126fb6e3",
+            "url": "https://download.zotero.org/client/release/7.0.24/Zotero-7.0.24_win-x64.zip",
+            "hash": "ad3297c00c38609de53a1c01338e064d7f3db6638128290461998d369d710c41",
             "extract_dir": "Zotero_win-x64"
         },
         "32bit": {
-            "url": "https://download.zotero.org/client/release/7.0.23/Zotero-7.0.23_win32.zip",
-            "hash": "0d0fe05968d45c5eb892ed59fbc08394c98c29a046f186ecb1a84fa6c912d57c",
+            "url": "https://download.zotero.org/client/release/7.0.24/Zotero-7.0.24_win32.zip",
+            "hash": "1fade184e591b2d248165afe5924577669977c2bdd3263104a036e8cd40287df",
             "extract_dir": "Zotero_win32"
         },
         "arm64": {
-            "url": "https://download.zotero.org/client/release/7.0.23/Zotero-7.0.23_win-arm64.zip",
-            "hash": "8218c1f04fd9d24c8ebcca46b275310ca70ffc648932218ed83ad9cf89fd1483",
+            "url": "https://download.zotero.org/client/release/7.0.24/Zotero-7.0.24_win-arm64.zip",
+            "hash": "76dab4ba99a98bfb81f2c5c606a392ae34999037470e4e23d73e0b05377b1c76",
             "extract_dir": "Zotero_win-arm64"
         }
     },
